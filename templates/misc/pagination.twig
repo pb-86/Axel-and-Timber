@@ -1,0 +1,42 @@
+{% if posts.pagination.pages %}
+	<nav class="axel-pagination">
+		<h3 class="screen-reader-text">
+			{{ __('Nawigacja po wpisach', 'axel') }}
+		</h3>
+		<ul class="axel-pagination__list">
+			
+			{# Previous page #}
+			{% if posts.pagination.prev %}
+				<li class="axel-pagination__item">
+					<a class="axel-pagination__link" href="{{ posts.pagination.prev.link }}">
+						{{ __('Poprzednia strona', 'axel') }}
+					</a>
+				</li>				
+			{% endif %}
+
+			{# Link do pages #}
+			{% for page in posts.pagination.pages %}
+				<li class="axel-pagination__item">
+					{% if page.link %}
+						<a class="axel-pagination__link" href="{{ page.link }}">
+							{{ page.title }}
+						</a>
+					{% else %}
+						<span class="axel-pagination__unactive">
+							{{ page.title }}
+						</span>
+					{% endif %}
+				</li>
+			{% endfor %}
+
+			{# Next page #}
+			{% if posts.pagination.next %}
+				<li class="axel-pagination__item">
+					<a class="axel-pagination__link" href="{{ posts.pagination.next.link }}">
+						{{ __('Następna strona', 'axel') }}
+					</a>
+				</li>				
+			{% endif %}
+		</ul>
+	</nav>
+{% endif %}

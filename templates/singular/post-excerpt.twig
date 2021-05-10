@@ -1,0 +1,52 @@
+<article id="post-{{ post.id }}" class="axel-excerpt {% if fn('is_sticky') %}axel-excerpt--sticky{% endif %}">
+
+	{# Header #}
+	<header class="axel-excerpt__header">
+		
+		{# Thumbnail #}
+		{% if post.thumbnail is not null %}
+			<img class="axel-excerpt__thumb" src="{{ post.thumbnail.src('axel-thumb')|e('esc_url') }}" alt="{{ post.thumbnail.alt }}">
+		{% endif %}
+
+		<div class="axel-excerpt__meta">
+			
+			{# Date #}
+			<time class="axel-excerpt__date" datetime="{{ post.post_date }}">
+				<span class="screen-reader-text">
+					{{ __('Dodano dnia: ', 'axel') }}
+				</span>
+				{{ post.date|e('esc_html') }}
+			</time>
+
+			{% if not fn('is_author') %}
+				
+				{# Separator #}
+				<span class="axel-excerpt__separator">,</span>
+
+				{# Author #}
+				<address class="axel-excerpt__author">
+					<a href="{{ post.author.link }}">
+						<span class="screen-reader-text">
+							{{ __('Autor: ', 'axel') }}
+						</span>
+						{{ post.author.name }}
+					</a>
+				</address>
+
+			{% endif %}
+		</div>
+
+		{# Title #}
+		<h2 class="axel-excerpt__title">
+			<a href="{{ post.link|e('esc_url') }}">
+				{{ post.title|e('esc_html') }}
+			</a>
+		</h2>
+	</header>
+
+	{# Excerpt #}
+	<div class="axel-excerpt__content">
+		{{ post.preview.read_more('') }}
+	</div>
+
+</article>

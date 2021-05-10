@@ -1,0 +1,23 @@
+.axel-submenu {
+	display: none;
+	position: relative;
+
+	&--show {
+		background-color: #fff;
+		border: 1px solid #ccc;
+		display: block;
+		list-style: none;
+		padding: 0.5rem 1rem;
+		position: absolute;
+		text-align: left;
+		white-space: nowrap;
+		z-index: 9999;
+	}
+
+	&--header {
+	}
+
+	&--footer {
+
+	}
+}

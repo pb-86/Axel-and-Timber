@@ -1,0 +1,6 @@
+.axel-category {
+	&__title {
+		@include title;
+		margin-bottom: 6rem;
+	}
+}

@@ -1,0 +1,28 @@
+{% include "templates/header.twig" %}
+
+<div class="axel-wrapper axel-wrapper--2-columns">
+	<main class="axel-author" id="main-content" tabindex="-1">
+
+		<div class="axel-author__meta">
+
+			{# Name #}
+			<h1 class="axel-author__name">
+				{{ author_name }}
+			</h1>
+
+			{# Bio #}
+			<p class="axel-author__bio">
+				{{ author_bio }}
+			</p>
+
+		</div>
+
+		{% include "templates/singular/loop.twig" %}
+
+	</main>
+
+	{% include "templates/sidebar.twig" %}
+
+</div>
+
+{% include "templates/footer.twig" %}

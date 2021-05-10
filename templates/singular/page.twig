@@ -1,0 +1,51 @@
+<article id="page-{{ page.id }}" class="axel-singular">
+
+	{# Header #}
+	<header class="axel-singular__header">
+		<div class="axel-singular__meta">
+
+			{# Date #}
+			<time class="axel-singular__date" datetime="{{ page.post_date }}">
+				{{ page.date|e('esc_html') }},
+			</time>
+
+			{# Author #}
+			<address class="axel-singular__author">
+				<a href="{{ page.author.link }}">
+					{{ page.author.name }}
+				</a>
+			</address>
+		</div>
+
+		{# Title #}
+		<h1 class="axel-singular__title">
+			{{ page.title }}
+		</h1>
+
+		{# Breadcrumbs #}
+		{{ fn('rddgbc') }}
+
+		{# Thumbnail #}
+		{% if page.thumbnail is not null %}
+			<figure class="axel-singular__thumb">
+				<img src="{{ page.thumbnail.src('axel-thumb')|e('esc_url') }}" alt="{{ page.thumbnail.alt }}">
+				<figcaption>{{ page.thumbnail.caption }}</figcaption>
+			</figure>	
+		{% endif %}
+
+	</header>
+
+	{# Content #}
+	<div class="axel-singular__content">
+		{{ page.content }}
+	</div>
+
+	{# Footer #}
+	<footer class="axel-singular__footer">
+		{% include 'templates/singular/revisions.twig' %}
+		<a href="{{ site.url|e('esc_url') }}">
+			{{ __('Wróć do strony głównej', 'axel') }}
+		</a>
+	</footer>
+
+</article>

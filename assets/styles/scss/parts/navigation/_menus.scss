@@ -1,0 +1,24 @@
+.axel-menu {
+	list-style: none;
+	text-align: center;
+
+	&__item {
+		display: inline-block;
+		margin: 0 0.5rem;
+		position: relative;
+	}
+
+	&__has-children {
+		&::after {
+			content: "\2022";
+			display: inline;
+		}
+	}
+
+	&--header {
+	}
+
+	&--footer {
+
+	}
+}

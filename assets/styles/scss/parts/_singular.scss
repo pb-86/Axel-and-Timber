@@ -1,0 +1,34 @@
+.axel-singular {
+	&__header {
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+
+	&__date,
+	&__author {
+		display: inline;
+	}
+
+	&__title {
+		@include title;
+		margin: 2rem 0;
+	}
+
+	&__thumb {
+		display: block;
+		margin: 4rem 0;
+
+		img {
+			display: block;
+			line-height: 0;
+		}
+	}
+
+	&__content {
+		margin: 4rem 0;
+
+		p {
+			margin: 2rem 0;
+		}
+	}
+}

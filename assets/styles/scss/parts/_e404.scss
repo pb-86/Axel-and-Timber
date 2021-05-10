@@ -1,0 +1,26 @@
+.axel-e404 {
+	margin: 4rem 0;
+
+	&__header {
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+
+	&__title {
+		@include title;
+		margin: 0.75rem -8rem 1rem;
+	}
+	
+	&__content {
+		margin: 4rem 0;
+		text-align: center;
+
+		p {
+			margin: 2rem 0;
+		}
+	}
+
+	&__footer {
+		text-align: center;
+	}
+}

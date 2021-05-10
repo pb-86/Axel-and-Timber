@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html {{ site.language_attributes }}>
+
+<head>
+	<meta charset="{{ site.charset }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	{{ function('wp_head') }}
+</head>
+
+<body class="{{ body_class }}">
+
+	{% include "templates/header/skip-links.twig" %}	
+
+	<div class="axel-wrapper">
+		<header class="axel-header">
+
+			{% include "templates/header/site-name.twig" %}
+			{% include "templates/header/search-form.twig" %}
+			{% include "templates/menus/header-menu.twig" %}
+
+		</header>
+	</div>

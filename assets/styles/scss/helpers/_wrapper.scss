@@ -1,0 +1,20 @@
+.axel-wrapper {
+	margin: 0 auto;
+	max-width: 70rem;
+	padding: 0 2rem;
+
+	&--2-columns {
+		display: grid;
+		gap: 8rem;
+		grid-template-columns: 42rem 20rem;
+		max-width: 70rem;
+	}
+
+	&--content {
+		max-width: 42rem;
+	}
+
+	&--sidebar {
+		max-width: 20em;
+	}
+}

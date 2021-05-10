@@ -1,0 +1,29 @@
+.axel-sidebar {
+	section {
+		margin: 2rem 0;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		h2,
+		h3 {
+			font-size: 1rem;
+			line-height: 1;
+			margin-bottom: 1rem;
+		}
+
+		ul {
+			list-style: none;
+
+			li {
+				line-height: 1.25;
+				margin: 0.25rem 0;
+			}
+		}
+	}
+}

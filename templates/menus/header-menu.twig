@@ -1,0 +1,24 @@
+<nav class="axel-navbar axel-navbar--header" id="axel-navbar-header">
+	{% if header_menu %}
+		<ul class="axel-menu axel-menu--header" id="axel-menu-header">
+			{% for item in header_menu.items %}
+				<li class="axel-menu__item {% if item.children %}axel-menu__has-children{% endif %}">
+					<a class="axel-menu__link {% if item.current %}axel-menu__link--current{% endif %}" href="{{ item.link|e('esc_url') }}">
+						{{ item.title|e('esc_html') }}
+					</a>
+					{% if item.children %}
+						<ul class="axel-submenu axel-submenu--header">
+							{% for child in item.children %}
+								<li class="axel-submenu__item">
+									<a class="axel-submenu__link {% if child.current %}axel-menu__link--current{% endif %}" href="{{ child.link|e('esc_url') }}">
+										{{ child.title|e('esc_html') }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+</nav>

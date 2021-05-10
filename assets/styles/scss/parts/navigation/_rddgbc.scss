@@ -1,0 +1,13 @@
+.rddgbc {
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		display: inline;
+	}
+
+	&__separator {
+		margin: 0 0.5rem;
+	}
+}

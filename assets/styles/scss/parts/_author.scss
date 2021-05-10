@@ -1,0 +1,14 @@
+.axel-author {
+	&__meta {
+		margin-bottom: 6rem;
+	}
+
+	&__name {
+		@include title;
+		margin-bottom: 1rem;
+	}
+
+	&__bio {
+		text-align: center;
+	}
+}

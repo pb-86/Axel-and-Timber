@@ -1,0 +1,8 @@
+{% if posts is not empty %}
+	{% for post in posts %}
+		{% include "templates/singular/post-excerpt.twig" %}
+	{% endfor %}
+	{% include "templates/misc/pagination.twig" %}
+{% else %}
+	{% include "templates/singular/no-posts.twig" %}
+{% endif %}

@@ -1,0 +1,19 @@
+.axel-nearbyposts {
+	&__list {
+		display: grid;
+		gap: 2rem;
+		grid-template-areas: 'prev next';
+		grid-template-columns: 1fr 1fr;
+		list-style: none
+	}
+
+	&__prev {
+		grid-area: prev;
+		text-align: left;
+	}
+
+	&__next {
+		grid-area: next;
+		text-align: right;
+	}
+}

@@ -1,0 +1,50 @@
+<article id="post-{{ post.id }}" class="axel-singular">
+
+	{# Header #}
+	<header class="axel-singular__header">
+		<div class="axel-singular__meta">
+			
+			{# Date #}
+			<time class="axel-singular__date" datetime="{{ post.post_date }}">
+				{{ post.date|e('esc_html') }},
+			</time>
+
+			{# Author #}
+			<address class="axel-singular__author">
+				<a href="{{ post.author.link }}">
+					{{ post.author.name }}
+				</a>
+			</address>
+
+		</div>
+
+		{# Title #}
+		<h1 class="axel-singular__title">
+			{{ post.title }}
+		</h1>
+
+		{# Breadcrumbs #}
+		{{ fn('rddgbc') }}
+
+		{# Thumbnail #}
+		{% if post.thumbnail is not null %}
+			<figure class="axel-singular__thumb">
+				<img src="{{ post.thumbnail.src('axel-thumb')|e('esc_url') }}" alt="{{ post.thumbnail.alt }}">
+				<figcaption>{{ post.thumbnail.caption }}</figcaption>
+			</figure>				
+		{% endif %}
+
+	</header>
+
+	{# Content #}
+	<div class="axel-singular__content">
+		{{ post.content }}
+	</div>
+
+	{# Footer #}
+	<footer class="axel-singular__footer">
+		{% include 'templates/singular/revisions.twig' %}
+		{% include "templates/singular/nearby-posts.twig" %}
+	</footer>
+
+</article>

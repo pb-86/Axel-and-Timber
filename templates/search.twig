@@ -1,0 +1,25 @@
+{% include "templates/header.twig" %}
+
+<div class="axel-wrapper axel-wrapper--2-columns">
+	<main class="axel-search" id="main-content" tabindex="-1">
+
+		{# Title with search phrase #}
+		<h1 class="axel-search__title">
+			{{ __('Wyniki wyszukiwania', 'axel') }}
+
+			{# Search phrase #}
+			<div class="axel-search__phrase">
+				{{ __('dla frazy: ', 'axel') }}
+				{{ search_query }}
+			</div>
+		</h1>
+
+		{% include "templates/loop/main-loop.twig" %}
+
+	</main>
+
+	{% include "templates/sidebar.twig" %}
+
+</div>
+
+{% include "templates/footer.twig" %}

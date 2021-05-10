@@ -1,0 +1,21 @@
+{% if revisions is not empty %}
+	<ul class="axel-revisions">
+		{% for revision in revisions %}
+			<li class="axel-revisions__item">
+
+				{# Date #}
+				<span class="axel-revisions__type">
+					{{ __('data: ', 'axel') }}
+				</span>
+				{{ revision.post_date }},
+
+				{# Author #}
+				<span class="axel-revisions__type">
+					{{ __('autor: ', 'axel') }}
+				</span>
+				{{ fn('get_the_author_meta', 'display_name', revision.post_author) }}
+				
+			</li>
+		{% endfor %}
+	</ul>
+{% endif %}

@@ -1,0 +1,23 @@
+.axel-excerpt {
+	margin-bottom: 6rem;
+
+	&__thumb {
+		display: block;
+		margin: 0 0 2rem;
+	}
+
+	&__date,
+	&__author {
+		display: inline;
+	}
+
+	&__title {
+		font-size: 2rem;
+		line-height: 1.25;
+		margin: 0.25rem 0 1rem;
+	}
+
+	&__content {
+		margin: 1rem auto 0.25rem;
+	}
+}

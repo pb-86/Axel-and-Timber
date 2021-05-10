@@ -1,0 +1,19 @@
+<div class="axel-sitename">
+	{% if(fn('is_front_page') or fn('is_home')) %}
+		<h1>
+	{% endif %}
+
+	{# Site name #}
+	<a class="axel-sitename__link" href="{{ site.url|e('esc_url') }}">
+		{{ site.name|e('esc_html') }}
+	</a>
+
+	{% if(fn('is_front_page') or fn('is_home')) %}
+		</h1>
+	{% endif %}
+
+	{# Site description #}
+	<div class="axel-sitename__description">
+		{{ site.description|e('esc_html') }}
+	</div>
+</div>

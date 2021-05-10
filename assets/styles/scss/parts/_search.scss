@@ -1,0 +1,11 @@
+.axel-search {
+	&__title {
+		@include title;
+		margin-bottom: 6rem;
+	}
+
+	&__phrase {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+}

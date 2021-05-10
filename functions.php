@@ -4,10 +4,10 @@
  *
  * @package WordPress
  * @subpackage Axel-Twig
- * @since 1.0
+ * @since 1.0.1
  */
 
-define( 'AXEL_THEME_VERSION', '1.0' );
+define( 'AXEL_THEME_VERSION', '1.0.1' );
 
 define( 'AXEL_THEME_URI', get_template_directory_uri() );
 define( 'AXEL_THEME_IMAGES', AXEL_THEME_URI . '/assets/images/' );
@@ -22,7 +22,7 @@ require_once 'settings/styles.php';   // Registering CSS styles.
 require_once 'settings/scripts.php';  // Registering JS scripts.
 
 /**
- * Adding data to the main Timber context.
+ * Adds additional data to the main Timber context.
  *
  * @param array $context Timber context.
  *

@@ -1,0 +1,23 @@
+<nav class="axel-adjacent-posts">
+	<ul class="axel-adjacent-posts">
+
+		{# Previous post #}
+		{% if post.prev %}
+			<li class="axel-adjacent-posts__prev">
+				<a class="axel-adjacent-posts__link" href="{{ post.prev.link|e('esc_url') }}">
+					{{ post.prev.title|e('esc_html') }}
+				</a>
+			</li>
+		{% endif %}
+
+		{# Next post #}
+		{% if post.next %}
+			<li class="axel-adjacent-posts__next">
+				<a class="axel-adjacent-posts__link" href="{{ post.next.link|e('esc_url') }}">
+					{{ post.next.title|e('esc_html') }}
+				</a>
+			</li>
+		{% endif %}
+
+	</ul>
+</nav>

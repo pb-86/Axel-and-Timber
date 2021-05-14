@@ -9,14 +9,14 @@
 
 <body class="{{ body_class }}">
 	{{ fn('wp_body_open') }}
-	{% include "templates/header/skip-links.twig" %}	
+	{% include "template-parts/header/skip-links.twig" %}	
 
 	<div class="axel-wrapper">
 		<header class="axel-header">
 
-			{% include "templates/header/site-name.twig" %}
-			{% include "templates/header/search-form.twig" %}
-			{% include "templates/menus/header-menu.twig" %}
+			{% include "template-parts/header/site-name.twig" %}
+			{% include "template-parts/header/search-form.twig" %}
+			{% include "template-parts/menus/header-menu.twig" %}
 
 		</header>
 	</div>

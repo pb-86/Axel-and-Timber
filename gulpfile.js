@@ -23,18 +23,18 @@ const styles = {
 
 const scripts = {
 	// Katalog ze skryptami przed kompresją
-	raw: 'assets/scripts/raw/*', 
+	raw: 'assets/scripts/unminified/*', 
 
 	// Katalog ze skompresowanymi skryptami
-	minified: 'assets/scripts/',
+	minified: 'assets/scripts/minified',
 }
 
 const images = {
 	// Katalog z obrazkami przed kompresją
-	raw: 'assets/images/raw/*',
+	raw: 'assets/images/uncompressed/*',
 
 	// Katalog ze skompresowanymi obrazkami
-	minified: 'assets/images/',
+	minified: 'assets/images/compressed',
 
 	// Ustawienia kompresji plików PNG
 	png_config: [ '--quality=75' ],

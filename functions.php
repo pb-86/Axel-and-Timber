@@ -4,15 +4,15 @@
  *
  * @package WordPress
  * @subpackage Axel-Twig
- * @since 1.0.5
+ * @since 1.0.6
  */
 
-define( 'AXEL_THEME_VERSION', '1.0.4' );
+define( 'AXEL_THEME_VERSION', '1.0.6' );
 
 define( 'AXEL_THEME_URI', get_template_directory_uri() );
-define( 'AXEL_THEME_IMAGES', AXEL_THEME_URI . '/assets/images/' );
+define( 'AXEL_THEME_IMAGES', AXEL_THEME_URI . '/assets/images/compressed' );
 define( 'AXEL_THEME_STYLES', AXEL_THEME_URI . '/assets/styles/css/' );
-define( 'AXEL_THEME_SCRIPTS', AXEL_THEME_URI . '/assets/scripts/' );
+define( 'AXEL_THEME_SCRIPTS', AXEL_THEME_URI . '/assets/scripts/minified/' );
 define( 'AXEL_THEME_VENDOR', AXEL_THEME_URI . '/assets/vendor/' );
 
 require_once 'settings/setup.php';    // Basic theme setup.

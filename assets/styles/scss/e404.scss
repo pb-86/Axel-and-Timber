@@ -5,10 +5,11 @@
 
 @import 'helpers/wrapper';
 @import 'helpers/screen-reader-text';
+@import 'helpers/button';
 
 @import 'parts/header/header';
-@import 'parts/header/sitename';
-@import 'parts/header/searchform';
+@import 'parts/header/site-name';
+@import 'parts/header/search-form';
 
 @import 'parts/navigation/navbars';
 @import 'parts/navigation/menus';
@@ -17,7 +18,7 @@
 @import 'parts/e404';
 
 @import 'parts/footer/footer';
+@import 'parts/footer/scroll-to-top';
 @import 'parts/footer/credits';
-@import 'parts/navigation/scroll-to-top';
 
 @import 'gutenberg/gutenberg';

@@ -1,9 +1,11 @@
-<form class="axel-searchform" method="get" action="{{ site.url }}">
-	<label class="screen-reader-text" for="search">
-    {{ __('Wyszukiwarka', 'axel') }}
-  </label>
-  <input type="search" id="search" name="s" autocomplete="on">
-  <button type="submit">
-    {{ __('Szukaj', 'axel') }}
-  </button>
+<form class="axel-search-form" method="get" action="{{ site.url }}">
+	<label class="axel-search-form__label">
+		<span class="screen-reader-text">
+			{{ __('Wyszukiwarka', 'axel') }}
+		</span>
+		<input class="axel-search-form__input" type="search" id="search" name="s" autocomplete="on" placeholder="{{ __('What are you looking for?', 'axel') }}">
+		<button class="axel-button axel-search-form__button" type="submit">
+			{{ __('Szukaj', 'axel') }}
+		</button>
+	</label>
 </form>

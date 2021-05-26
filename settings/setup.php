@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Axel-Twig
- * @since 1.0
+ * @since 1.1.3
  */
 
 add_action( 'after_setup_theme', 'axel_setup' );
@@ -21,6 +21,7 @@ function axel_setup() {
 	// Enables post thumbnails support.
 	add_theme_support( 'post-thumbnails' );
 
+	// Adding additional image sizes.
 	add_image_size( 'axel-excerpt-thumbnail', 526, 352, true );
 	add_image_size( 'axel-singular-thumbnail', 1120, 640, true );
 

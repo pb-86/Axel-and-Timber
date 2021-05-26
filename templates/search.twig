@@ -1,18 +1,20 @@
 {% include "templates/header.twig" %}
 
-<div class="axel-wrapper axel-wrapper--2-columns">
-	<main class="axel-search" id="main-content" tabindex="-1">
+<div class="axel-wrapper">
+	<main class="axel-main axel-main--search" id="axel-main" tabindex="-1">
 
 		{# Title with search phrase #}
-		<h1 class="axel-search__title">
-			{{ __('Wyniki wyszukiwania', 'axel') }}
+		<div class="axel-search">
+			<h1 class="axel-search__title">
+				{{ __('Wyniki wyszukiwania', 'axel') }}
 
-			{# Search phrase #}
-			<div class="axel-search__phrase">
-				{{ __('dla frazy: ', 'axel') }}
-				{{ search_query }}
-			</div>
-		</h1>
+				{# Search phrase #}
+				<div class="axel-search__phrase">
+					{{ __('dla frazy: ', 'axel') }}
+					{{ search_query }}
+				</div>
+			</h1>
+		</div>
 
 		{% include "template-parts/loops/loop-excerpt.twig" %}
 

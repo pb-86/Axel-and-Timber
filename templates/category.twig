@@ -1,12 +1,14 @@
 {% include "templates/header.twig" %}
 
-<div class="axel-wrapper axel-wrapper--2-columns">
-	<main class="axel-category" id="main-content" tabindex="-1">
+<div class="axel-wrapper">
+	<main class="axel-main axel-main--category" id="axel-main" tabindex="-1">
 
 		{# Title #}
-		<h1 class="axel-category__title">
-			{{ category_title }}
-		</h1>
+		<div class="axel-category">
+			<h1 class="axel-category__title">
+				{{ category_title }}
+			</h1>
+		</div>
 		
 		{% include "template-parts/loops/loop-excerpt.twig" %}
 

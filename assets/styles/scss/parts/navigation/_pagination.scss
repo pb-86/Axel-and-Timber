@@ -1,4 +1,6 @@
 .axel-pagination {
+	grid-column: 1 / 3;
+
 	&__list {
 		@include flex(center,center);
 		list-style: none;

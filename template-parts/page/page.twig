@@ -3,7 +3,7 @@
 	{# Header #}
 	<header class="axel-singular__header">
 		<div class="axel-singular__meta">
-
+			
 			{# Date #}
 			<time class="axel-singular__date" datetime="{{ page.post_date }}">
 				{{ page.date|e('esc_html') }},
@@ -15,6 +15,7 @@
 					{{ page.author.name }}
 				</a>
 			</address>
+
 		</div>
 
 		{# Title #}
@@ -27,8 +28,8 @@
 
 		{# Thumbnail #}
 		{% if page.thumbnail is not null %}
-			<figure class="axel-singular__thumb">
-				<img src="{{ page.thumbnail.src('axel-thumb')|e('esc_url') }}" alt="{{ page.thumbnail.alt }}">
+			<figure class="axel-singular__thumbnail">
+				<img src="{{ page.thumbnail.src('axel-singular-thumbnail')|e('esc_url') }}" alt="{{ page.thumbnail.alt }}">
 				<figcaption>{{ page.thumbnail.caption }}</figcaption>
 			</figure>	
 		{% endif %}

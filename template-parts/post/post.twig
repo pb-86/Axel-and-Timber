@@ -28,8 +28,8 @@
 
 		{# Thumbnail #}
 		{% if post.thumbnail is not null %}
-			<figure class="axel-singular__thumb">
-				<img src="{{ post.thumbnail.src('axel-thumb')|e('esc_url') }}" alt="{{ post.thumbnail.alt }}">
+			<figure class="axel-singular__thumbnail">
+				<img src="{{ post.thumbnail.src('axel-singular-thumbnail')|e('esc_url') }}" alt="{{ post.thumbnail.alt }}">
 				<figcaption>{{ post.thumbnail.caption }}</figcaption>
 			</figure>				
 		{% endif %}

@@ -21,6 +21,9 @@ function axel_setup() {
 	// Enables post thumbnails support.
 	add_theme_support( 'post-thumbnails' );
 
+	add_image_size( 'axel-excerpt-thumbnail', 526, 352, true );
+	add_image_size( 'axel-singular-thumbnail', 1120, 640, true );
+
 	// Enables custom header support.
 	add_theme_support( 'custom-header', array() );
 
@@ -38,15 +41,4 @@ function axel_setup() {
 
 	// Loads the theme language files.
 	load_theme_textdomain( 'axel', AXEL_THEME_URI . '/language' );
-
-	// Adds new image size.
-	add_image_size( 'axel-thumb', 672, 432, true );
-
-	// Updates reserved images sizes.
-	update_option( 'large_size_w', 672 );
-	update_option( 'large_size_h', 672 );
-	update_option( 'medium_size_w', 320 );
-	update_option( 'medium_size_h', 320 );
-	update_option( 'thumbnail_size_w', 152 );
-	update_option( 'thumbnail_size_h', 152 );
 }

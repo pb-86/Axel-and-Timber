@@ -1,28 +1,22 @@
 {% include "templates/header.twig" %}
 
-<div class="axel-wrapper">
-	<main class="axel-main axel-main--author" id="axel-main" tabindex="-1">
+<main class="axel-main axel-main--author" id="axel-main" tabindex="-1">
 
-		<div class="axel-author">
+	<div class="axel-author">
+		{# Name #}
+		<h1 class="axel-author__name">
+			{{ author_name }}
+		</h1>
 
-			{# Name #}
-			<h1 class="axel-author__name">
-				{{ author_name }}
-			</h1>
+		{# Bio #}
+		<p class="axel-author__bio">
+			{{ author_bio }}
+		</p>
+	</div>
 
-			{# Bio #}
-			<p class="axel-author__bio">
-				{{ author_bio }}
-			</p>
+	{% include "template-parts/loops/loop-excerpt.twig" %}
 
-		</div>
+</main>
 
-		{% include "template-parts/loops/loop-excerpt.twig" %}
-
-	</main>
-
-	{% include "templates/sidebar.twig" %}
-
-</div>
-
+{% include "templates/sidebar.twig" %}
 {% include "templates/footer.twig" %}

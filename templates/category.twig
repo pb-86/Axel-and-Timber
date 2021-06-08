@@ -1,21 +1,17 @@
 {% include "templates/header.twig" %}
 
-<div class="axel-wrapper">
-	<main class="axel-main axel-main--category" id="axel-main" tabindex="-1">
+<main class="axel-main axel-main--category" id="axel-main" tabindex="-1">
 
-		{# Title #}
-		<div class="axel-category">
-			<h1 class="axel-category__title">
-				{{ category_title }}
-			</h1>
-		</div>
-		
-		{% include "template-parts/loops/loop-excerpt.twig" %}
+	{# Title #}
+	<div class="axel-category">
+		<h1 class="axel-category__title">
+			{{ category_title }}
+		</h1>
+	</div>
 
-	</main>
+	{% include "template-parts/loops/loop-excerpt.twig" %}
 
-	{% include "templates/sidebar.twig" %}
+</main>
 
-</div>
-
+{% include "templates/sidebar.twig" %}
 {% include "templates/footer.twig" %}

@@ -1,32 +1,28 @@
 {% include "templates/header.twig" %}
 
-<div class="axel-wrapper">
-	<main class="axel-main axel-main--e404" id="axel-main" tabindex="-1">
+<main class="axel-main axel-main--e404" id="axel-main" tabindex="-1">
 
-		<article class="axel-e404">
+	<article class="axel-e404">
+		{# Title #}
+		<header class="axel-e404__header">
+			<h1 class="axel-e404__title">
+				{{ __('Nie znaleziono strony', 'axel') }}
+			</h1>
+		</header>
 
-			{# Title #}
-			<header class="axel-e404__header">
-				<h1 class="axel-e404__title">
-					{{ __('Nie znaleziono strony', 'axel') }}
-				</h1>
-			</header>
+		{# Error message #}
+		<div class="axel-e404__content">
+			<p>{{ __('Przepraszamy ale strona, którą chciałeś wyświetlić nie istnieje.', 'axel') }}</p>
+		</div>
 
-			{# Error message #}
-			<div class="axel-e404__content">
-				<p>{{ __('Przepraszamy ale strona, którą chciałeś wyświetlić nie istnieje.', 'axel') }}</p>
-			</div>
+		{# Link to home page #}
+		<footer class="axel-e404__footer">
+			<a href="{{ site.url|e('esc_url') }}">
+				{{ __('Wróć do strony głównej', 'axel') }}
+			</a>
+		</footer>
+	</article>
 
-			{# Link to home page #}
-			<footer class="axel-e404__footer">
-				<a href="{{ site.url|e('esc_url') }}">
-					{{ __('Wróć do strony głównej', 'axel') }}
-				</a>
-			</footer>
-
-		</article>
-
-	</main>
-</div>
+</main>
 
 {% include "templates/footer.twig" %}

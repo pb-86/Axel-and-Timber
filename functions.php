@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Axel-Twig
- * @since 1.1.3
+ * @since 1.2
  */
 
 define( 'AXEL_THEME_VERSION', '1.1.2' );

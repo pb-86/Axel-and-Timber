@@ -1,14 +1,8 @@
 {% include "templates/header.twig" %}
 
-<div class="axel-wrapper">
-	<main class="axel-main axel-main--index" id="axel-main" tabindex="-1">
+<main class="axel-main axel-main--index" id="axel-main" tabindex="-1">
+	{% include "template-parts/loops/loop-excerpt.twig" %}
+</main>
 
-		{% include "template-parts/loops/loop-excerpt.twig" %}
-
-	</main>
-
-	{% include "templates/sidebar.twig" %}
-
-</div>
-
+{% include "templates/sidebar.twig" %}
 {% include "templates/footer.twig" %}

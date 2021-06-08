@@ -1,4 +1,7 @@
 .axel-main {
+	margin: 8rem auto;
+	padding: 0 2rem;
+
 	&--index,
 	&--category,
 	&--search,
@@ -6,6 +9,7 @@
 		display: grid;
 		gap: 4rem;
 		grid-template-columns: repeat(2, 1fr);
+		max-width: 70rem;
 	}
 
 	&--page,

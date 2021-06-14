@@ -1,23 +1,13 @@
 .axel-sidebar {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	margin: 0 auto;
 	max-width: 70rem;
 	padding: 0 2rem;
 
 	section {
-		margin: 2rem 0;
-
-		&:first-of-type {
-			margin-top: 0;
-		}
-
-		&:last-of-type {
-			margin-bottom: 0;
-		}
-
 		h2,
 		h3 {
-			font-size: 1rem;
-			line-height: 1;
 			margin-bottom: 1rem;
 		}
 

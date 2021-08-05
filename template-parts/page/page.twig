@@ -24,7 +24,9 @@
 		</h1>
 
 		{# Breadcrumbs #}
-		{{ fn('rddgbc') }}
+		{% if fn('function_exists', 'rddgbc') %}
+			{{ fn('rddgbc') }}
+		{% endif %}
 
 		{# Thumbnail #}
 		{% if page.thumbnail is not null %}

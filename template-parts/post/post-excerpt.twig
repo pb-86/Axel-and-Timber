@@ -5,7 +5,9 @@
 		
 		{# Thumbnail #}
 		{% if post.thumbnail is not null %}
-			<img class="axel-excerpt__thumbnail" src="{{ post.thumbnail.src('axel-excerpt-thumbnail')|e('esc_url') }}" alt="{{ post.thumbnail.alt }}">
+			<a class="axel-excerpt__thumbnail-link" href="{{ post.link|e('esc_url') }}" tabindex="-1">
+				<img class="axel-excerpt__thumbnail" src="{{ post.thumbnail.src('axel-excerpt-thumbnail')|e('esc_url') }}" alt="{{ post.thumbnail.alt }}">
+			</a>
 		{% endif %}
 
 		{# Date #}

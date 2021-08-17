@@ -10,9 +10,8 @@
 	}
 
 	&__title {
-		@include title;
+		@extend %title;
 		margin: 2rem 0;
-		word-break: break-word;
 	}
 
 	&__thumbnail {

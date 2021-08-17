@@ -1,7 +1,6 @@
 @import 'base/reset';
-
-@import 'mixins/flex';
-@import 'mixins/title';
+@import 'base/mixins';
+@import 'base/placeholders';
 
 @import 'helpers/screen-reader-text';
 @import 'helpers/button';

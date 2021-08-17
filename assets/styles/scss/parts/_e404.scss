@@ -7,7 +7,7 @@
 	}
 
 	&__title {
-		@include title;
+		@extend %title;
 		margin: 0.75rem -8rem 1rem;
 	}
 	

@@ -1,5 +1,5 @@
 .axel-excerpt {
-	border: 0.0625rem solid #e5e5e5;
+	border: 0.0625rem solid darken($silver, 5%);
 	padding: 2rem;
 
 	&__thumbnail-link {
@@ -13,7 +13,7 @@
 	}
 	
 	&__title {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		line-height: 1.5;
 		margin: 0.5rem 0 2rem;
 		word-break: break-word;
@@ -21,9 +21,8 @@
 
 	&__date,
 	&__author {
-		color: #666;
+		color: lighten($gray, 5%);
 		display: inline;
-		font-size: 0.875rem;
 	}
 
 	&__content {

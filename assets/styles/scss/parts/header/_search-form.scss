@@ -3,14 +3,14 @@
 
 	&__label {
 		align-items: center;
-		background-color: #fff;
-		border: 0.0625rem solid #666;
+		background-color: $white;
+		border: 0.0625rem solid $gray;
 		border-radius: 0.25rem;
 		display: inline-flex;
 	}
 	
 	&__input {
-		background: #fff;
+		background: $white;
 		border: 0;
 		border-radius: 0.25rem;
 		font-family: sans-serif;

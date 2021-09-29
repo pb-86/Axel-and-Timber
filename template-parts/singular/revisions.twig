@@ -5,13 +5,13 @@
 
 				{# Date #}
 				<span class="axel-revisions__type">
-					{{ __('data: ', 'axel') }}
+					{{ __('data: ', 'axel-twig') }}
 				</span>
 				{{ revision.post_date }},
 
 				{# Author #}
 				<span class="axel-revisions__type">
-					{{ __('autor: ', 'axel') }}
+					{{ __('autor: ', 'axel-twig') }}
 				</span>
 				{{ fn('get_the_author_meta', 'display_name', revision.post_author) }}
 				

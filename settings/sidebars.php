@@ -15,8 +15,8 @@ add_action( 'widgets_init', 'axel_sidebar' );
 function axel_sidebar() {
 	$args = array(
 		'id'            => 'sidebar',
-		'name'          => __( 'Główny sidebar', 'axel' ),
-		'description'   => __( 'Główny sidebar', 'axel' ),
+		'name'          => __( 'Główny sidebar', 'axel-twig' ),
+		'description'   => __( 'Główny sidebar', 'axel-twig' ),
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 		'before_widget' => '<section>',

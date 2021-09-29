@@ -6,19 +6,19 @@
 		{# Title #}
 		<header class="axel-e404__header">
 			<h1 class="axel-e404__title">
-				{{ __('Nie znaleziono strony', 'axel') }}
+				{{ __('Nie znaleziono strony', 'axel-twig') }}
 			</h1>
 		</header>
 
 		{# Error message #}
 		<div class="axel-e404__content">
-			<p>{{ __('Przepraszamy ale strona, którą chciałeś wyświetlić nie istnieje.', 'axel') }}</p>
+			<p>{{ __('Przepraszamy ale strona, którą chciałeś wyświetlić nie istnieje.', 'axel-twig') }}</p>
 		</div>
 
 		{# Link to home page #}
 		<footer class="axel-e404__footer">
 			<a href="{{ site.url|e('esc_url') }}">
-				{{ __('Wróć do strony głównej', 'axel') }}
+				{{ __('Wróć do strony głównej', 'axel-twig') }}
 			</a>
 		</footer>
 	</article>

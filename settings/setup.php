@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Axel-Twig
- * @since 1.1.3
+ * @since 1.4
  */
 
 add_action( 'after_setup_theme', 'axel_setup' );
@@ -37,9 +37,12 @@ function axel_setup() {
 	// Allows plugins to manage the document title tag.
 	add_theme_support( 'title-tag' );
 
+	// Enables Automatic Feed Links for post and comment.
+	add_theme_support( 'automatic-feed-links' );
+
 	// Loads a CSS file with custom editor styles.
 	add_editor_style( AXEL_THEME_STYLES . 'editor.min.css' );
 
 	// Loads the theme language files.
-	load_theme_textdomain( 'axel', AXEL_THEME_URI . '/language' );
+	load_theme_textdomain( 'axel-twig', AXEL_THEME_URI . '/language' );
 }

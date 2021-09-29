@@ -13,7 +13,7 @@
 		{# Date #}
 		<time class="axel-excerpt__date" datetime="{{ post.post_date }}">
 			<span class="screen-reader-text">
-				{{ __('Dodano dnia: ', 'axel') }}
+				{{ __('Dodano dnia: ', 'axel-twig') }}
 			</span>
 			{{ post.date|e('esc_html') }}
 		</time>
@@ -26,7 +26,7 @@
 			<address class="axel-excerpt__author">
 				<a href="{{ post.author.link }}">
 					<span class="screen-reader-text">
-						{{ __('Autor: ', 'axel') }}
+						{{ __('Autor: ', 'axel-twig') }}
 					</span>
 					{{ post.author.name }}
 				</a>

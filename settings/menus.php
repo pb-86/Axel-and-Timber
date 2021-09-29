@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Axel-Twig
- * @since 1.0
+ * @since 1.4
  */
 
 add_action( 'init', 'axel_menu' );
@@ -14,8 +14,8 @@ add_action( 'init', 'axel_menu' );
  */
 function axel_menu() {
 	$locations = array(
-		'header_menu' => __( 'Górne menu', 'axel' ),
-		'footer_menu' => __( 'Dolne menu', 'axel' ),
+		'header_menu' => __( 'Górne menu', 'axel-twig' ),
+		'footer_menu' => __( 'Dolne menu', 'axel-twig' ),
 	);
 	register_nav_menus( $locations );
 }

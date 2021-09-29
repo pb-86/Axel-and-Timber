@@ -1,7 +1,7 @@
 {% if posts.pagination.pages %}
 	<nav class="axel-pagination">
 		<h3 class="screen-reader-text">
-			{{ __('Nawigacja po wpisach', 'axel') }}
+			{{ __('Nawigacja po wpisach', 'axel-twig') }}
 		</h3>
 		<ul class="axel-pagination__list">
 			
@@ -9,7 +9,7 @@
 			{% if posts.pagination.prev %}
 				<li class="axel-pagination__item">
 					<a class="axel-pagination__link" href="{{ posts.pagination.prev.link }}">
-						{{ __('Poprzednia strona', 'axel') }}
+						{{ __('Poprzednia strona', 'axel-twig') }}
 					</a>
 				</li>				
 			{% endif %}
@@ -33,7 +33,7 @@
 			{% if posts.pagination.next %}
 				<li class="axel-pagination__item">
 					<a class="axel-pagination__link" href="{{ posts.pagination.next.link }}">
-						{{ __('Następna strona', 'axel') }}
+						{{ __('Następna strona', 'axel-twig') }}
 					</a>
 				</li>				
 			{% endif %}

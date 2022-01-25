@@ -3,8 +3,8 @@
  * Main configurations of the theme.
  *
  * @package WordPress
- * @subpackage Axel-Twig
- * @since 1.4
+ * @subpackage Axel and Timber
+ * @since 1.6
  */
 
 add_action( 'after_setup_theme', 'axel_setup' );

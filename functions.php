@@ -3,11 +3,11 @@
  * This file loads all theme setup files
  *
  * @package WordPress
- * @subpackage Axel-Twig
- * @since 1.5
+ * @subpackage Axel and Timber
+ * @since 1.6
  */
 
-define( 'AXEL_THEME_VERSION', '1.5' );
+define( 'AXEL_THEME_VERSION', '1.6' );
 
 define( 'AXEL_THEME_URI', get_template_directory_uri() );
 define( 'AXEL_THEME_IMAGES', AXEL_THEME_URI . '/assets/images/compressed/' );

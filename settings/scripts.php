@@ -3,8 +3,8 @@
  * Scripts are registered and enqueued here.
  *
  * @package WordPress
- * @subpackage Axel-Twig
- * @since 1.0
+ * @subpackage Axel and Timber
+ * @since 1.6
  */
 
 add_action( 'wp_enqueue_scripts', 'axel_scripts' );

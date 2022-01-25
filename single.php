@@ -3,8 +3,8 @@
  * Controller of the post template.
  *
  * @package WordPress
- * @subpackage Axel-Twig
- * @since 1.0
+ * @subpackage Axel and Timber
+ * @since 1.6
  */
 
 $context              = Timber::context();

@@ -3,8 +3,8 @@
  * Menus are registered here.
  *
  * @package WordPress
- * @subpackage Axel-Twig
- * @since 1.4
+ * @subpackage Axel and Timber
+ * @since 1.6
  */
 
 add_action( 'init', 'axel_menu' );

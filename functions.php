@@ -4,10 +4,10 @@
  *
  * @package WordPress
  * @subpackage Axel and Timber
- * @since 1.7
+ * @since 1.8
  */
 
-define( 'AXEL_THEME_VERSION', '1.7' );
+define( 'AXEL_THEME_VERSION', '1.8' );
 
 define( 'AXEL_THEME_URI', get_template_directory_uri() );
 define( 'AXEL_THEME_IMAGES', AXEL_THEME_URI . '/assets/images/compressed/' );
@@ -15,11 +15,12 @@ define( 'AXEL_THEME_STYLES', AXEL_THEME_URI . '/assets/styles/css/' );
 define( 'AXEL_THEME_SCRIPTS', AXEL_THEME_URI . '/assets/scripts/minified/' );
 define( 'AXEL_THEME_VENDOR', AXEL_THEME_URI . '/assets/vendor/' );
 
-require_once 'settings/setup.php';    // Basic theme setup.
-require_once 'settings/menus.php';    // Registering menus.
-require_once 'settings/sidebars.php'; // Registering sidebar.
-require_once 'settings/styles.php';   // Registering CSS styles.
-require_once 'settings/scripts.php';  // Registering JS scripts.
+require_once 'settings/setup.php';        // Basic theme setup.
+require_once 'settings/styles.php';       // Registering CSS styles.
+require_once 'settings/scripts.php';      // Registering JS scripts.
+require_once 'settings/menus.php';        // Registering menus.
+require_once 'settings/sidebars.php';     // Registering sidebar.
+require_once 'settings/optimisation.php'; // Code that helps speed up site.
 
 /**
  * Adds additional data to the main Timber context.

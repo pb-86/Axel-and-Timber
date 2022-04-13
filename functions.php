@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Axel and Timber
- * @since 1.12
+ * @since 1.13
  */
 
 define( 'AXEL_THEME_VERSION', '1.12' );

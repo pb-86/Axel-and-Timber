@@ -4,15 +4,15 @@
  *
  * @package WordPress
  * @subpackage Axel and Timber
- * @since 1.6
+ * @since 1.13
  */
 
-add_action( 'widgets_init', 'axel_sidebar' );
+add_action( 'widgets_init', 'axel_sidebars' );
 
 /**
  * Registers sidebar.
  */
-function axel_sidebar() {
+function axel_sidebars() {
 	$args = array(
 		'id'            => 'sidebar',
 		'name'          => __( 'Główny sidebar', 'axel-twig' ),

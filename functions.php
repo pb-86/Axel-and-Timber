@@ -4,10 +4,10 @@
  *
  * @package WordPress
  * @subpackage Axel and Timber
- * @since 1.11
+ * @since 1.12
  */
 
-define( 'AXEL_THEME_VERSION', '1.11' );
+define( 'AXEL_THEME_VERSION', '1.12' );
 
 define( 'AXEL_THEME_URI', get_template_directory_uri() );
 define( 'AXEL_THEME_IMAGES', AXEL_THEME_URI . '/assets/images/compressed/' );

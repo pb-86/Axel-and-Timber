@@ -4,15 +4,15 @@
  *
  * @package WordPress
  * @subpackage Axel and Timber
- * @since 1.6
+ * @since 1.12
  */
 
-add_action( 'init', 'axel_menu' );
+add_action( 'init', 'axel_menus' );
 
 /**
  * Registers all menus.
  */
-function axel_menu() {
+function axel_menus() {
 	$locations = array(
 		'header_menu' => __( 'Górne menu', 'axel-twig' ),
 		'footer_menu' => __( 'Dolne menu', 'axel-twig' ),

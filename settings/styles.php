@@ -4,7 +4,7 @@
  *
  * @package WordPress
  * @subpackage Axel and Timber
- * @since 1.7
+ * @since 1.11
  */
 
 add_action( 'wp_enqueue_scripts', 'axel_styles' );
@@ -35,5 +35,10 @@ function axel_styles() {
 	}
 
 	// Removes the default CSS of blocks.
+	wp_dequeue_style( 'wp-block-library' );
 	wp_deregister_style( 'wp-block-library' );
+
+	// Removes default styles.
+	wp_dequeue_style( 'global-styles' );
+	wp_deregister_style( 'global-styles' );
 }
